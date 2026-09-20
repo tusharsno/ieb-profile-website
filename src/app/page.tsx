@@ -1,12 +1,9 @@
 import Hero from "./components/Hero";
 import StatsStrip from "./components/StatsStrip";
-import QuickInfo from "./components/QuickInfo";
-import MessageSection from "./components/MessageSection";
-import VisionPriorities from "./components/VisionPriorities";
+import MainInfoSection from "./components/MainInfoSection";
 import ExperienceCards from "./components/ExperienceCards";
-import FeaturedVideo from "./components/FeaturedVideo";
-import PhotoGallery from "./components/PhotoGallery";
-import ConnectSection from "./components/ConnectSection";
+import StrategicCommitment from "./components/StrategicCommitment";
+import BottomMediaRow from "./components/BottomMediaRow";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -14,13 +11,10 @@ export default function Home() {
     <>
       <Hero />
       <StatsStrip />
-      <QuickInfo />
-      <MessageSection />
-      <VisionPriorities />
+      <MainInfoSection />
       <ExperienceCards />
-      <FeaturedVideo />
-      <PhotoGallery />
-      <ConnectSection />
+      <StrategicCommitment />
+      <BottomMediaRow />
       <Footer />
     </>
   );
