@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import React from "react";
 import "./globals.css";
 import Header from "./components/Header";
 
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
   description: "Official campaign website for Arif Hasan Chowdhury, candidate for the Institution of Engineers, Bangladesh (IEB) Council.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"

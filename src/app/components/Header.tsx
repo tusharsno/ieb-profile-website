@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Send } from "lucide-react";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -14,14 +15,14 @@ const navLinks = [
 export default function Header() {
   return (
     <header className="w-full bg-white border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
+      <div className="max-w-8xl mx-auto px-6 flex items-center justify-between h-16">
         {/* Branding */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <Image
             src="/images/branding/ieb-logo.png"
             alt="IEB logo"
-            width={40}
-            height={40}
+            width={76}
+            height={76}
             className="object-contain block"
           />
           <span className="text-[#003d7a] leading-tight hidden sm:block">
@@ -40,7 +41,7 @@ export default function Header() {
                     href={href}
                     className={`text-[#1a1a2e] text-sm font-medium hover:text-[#003d7a] transition-colors whitespace-nowrap${
                       label === "Home"
-                        ? " border-b-2 border-[#003d7a] pb-0.5"
+                        ? " border-y-2 border-[#4b4f59] py-0.5"
                         : ""
                     }`}
                   >
@@ -53,8 +54,9 @@ export default function Header() {
 
           <Link
             href="/support"
-            className="shrink-0 bg-[#003d7a] hover:bg-[#002d5a] text-white text-sm font-semibold px-4 py-2 rounded transition-colors whitespace-nowrap"
+            className="shrink-0 bg-[#003d7a] hover:bg-[#002d5a] text-white text-sm font-semibold px-4 py-2 rounded transition-colors whitespace-nowrap flex items-center gap-1.5 mr-20 ml-20"
           >
+            <Send size={14} className="shrink-0" />
             Support My Campaign
           </Link>
         </div>
