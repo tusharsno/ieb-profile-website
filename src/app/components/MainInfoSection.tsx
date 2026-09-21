@@ -36,9 +36,7 @@ export default function MainInfoSection() {
           grid-cols-1
           items-stretch
           gap-4
-          px-5
-
-          md:grid-cols-2
+          px-4 sm:px-5
 
           lg:grid-cols-[260px_minmax(0,1fr)_350px]
           lg:gap-[26px]

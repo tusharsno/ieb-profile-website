@@ -48,6 +48,7 @@ import {
   Award,
   BookOpen,
   Briefcase,
+  GraduationCap,
   Mail,
   MapPin,
   User,
@@ -91,6 +92,11 @@ const infoItems: InfoItem[] = [
     icon: Briefcase,
     label: "Profession",
     value: "Academic & IT Professional",
+  },
+  {
+    icon: GraduationCap,
+    label: "Education",
+    value: "Ph.D. Fellow (JU), M.Sc. Sweden, B.Sc. (IIUC)",
   },
   {
     icon: Briefcase,
@@ -152,7 +158,7 @@ export default function QuickInfo() {
             key={label}
             className={`
               grid
-              grid-cols-[18px_68px_minmax(0,1fr)]
+              grid-cols-[18px_minmax(80px,100px)_minmax(0,1fr)]
               items-start
               gap-x-[6px]
               px-[12px]
@@ -179,7 +185,7 @@ export default function QuickInfo() {
             <span
               className="
                 pt-[1px]
-                text-[11.5px]
+                text-[15px]
                 font-semibold
                 leading-[1.25]
                 text-[#21384d]
@@ -191,7 +197,7 @@ export default function QuickInfo() {
             <span
               className="
                 min-w-0
-                text-[10.5px]
+                text-[14px]
                 font-medium
                 leading-[1.3]
                 text-[#263b4d]
@@ -215,7 +221,7 @@ export default function QuickInfo() {
             gap-[6px]
             rounded-[3px]
             bg-[#07518a]
-            text-[12.5px]
+            text-[15.5px]
             font-semibold
             text-white
             transition-colors
